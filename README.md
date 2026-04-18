@@ -136,7 +136,7 @@ Frontend displays results
 ## 🧪 How to Run the Project
 
 ### 1️⃣ Clone Repository
-```bash
+bash
 git clone https://github.com/your-username/ai-resume-analyzer.git
 cd ai-resume-analyzer
 ### 2️⃣ Install Dependencies
