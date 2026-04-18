@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #0a0f1c;
+    color: white;
+
+    min-height: 100vh;
+    overflow-y: auto;   /* ✅ allow vertical scroll */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* animated background */
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top, #1e3a8a, transparent),
+                radial-gradient(circle at bottom, #9333ea, transparent);
+    filter: blur(80px);
+}
+
+/* center container */
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* glass card */
+.glass-card {
+    width: 420px;
+    padding: 35px;
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.1);
+
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+/* text */
+h1 {
+    margin-bottom: 5px;
+}
+
+p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+/* drag drop box */
+.drop-zone {
+    margin-top: 20px;
+    padding: 35px;
+    border: 2px dashed rgba(255,255,255,0.3);
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.drop-zone:hover {
+    border-color: #60a5fa;
+    background: rgba(96,165,250,0.1);
+}
+
+.icon {
+    font-size: 40px;
+}
+
+.drop-zone h3 {
+    margin: 10px 0 5px;
+}
+
+.drop-zone p {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+#fileName {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #facc15;
+}
+
+/* button */
+.btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
+/* loading */
+.loading {
+    margin-top: 15px;
+    display: none;
+    color: #facc15;
+}
+
+/* spinner */
+.spinner {
+    width: 18px;
+    height: 18px;
+    border: 3px solid #fff;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+.dash-container {
+    min-height: 100vh;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.dash-card {
+    width: 450px;
+    padding: 30px;
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    color: white;
+}
+
+/* SCORE CIRCLE */
+.score-circle {
+    width: 140px;
+    height: 140px;
+    margin: 20px auto;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: conic-gradient(#3b82f6 0%, #9333ea 70%, #1f2937 70%);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.score {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* skills */
+.section {
+    margin-top: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.skill {
+    padding: 6px 12px;
+    background: rgba(59,130,246,0.2);
+    border: 1px solid #3b82f6;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.feedback-box {
+    margin-top: 15px;
+    padding: 12px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    text-align: left;
+}
+
+.feedback-box h3 {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #93c5fd;
+}
+
+.feedback-box ul {
+    padding-left: 18px;
+    font-size: 12px;
+    color: #e5e7eb;
+}
+
+.feedback-box li {
+    margin-bottom: 4px;
+}

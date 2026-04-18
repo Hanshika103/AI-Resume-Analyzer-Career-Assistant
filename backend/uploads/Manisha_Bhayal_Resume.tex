@@ -1,0 +1,250 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,11pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+\usepackage{mathptmx}   % Times New Roman style font for text + math
+
+
+
+
+
+%debug page outer frames
+%\usepackage{showframe}
+
+
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Manisha Bhayal} \\[7.5pt]
+
+\href{https:}{\raisebox{-0.05\height}\faLinkedin\ manisha-bhayal} \ $|$ \ 
+\href{https://github.com/Manisha320}{\raisebox{-0.05\height}\faGithub\ Manisha320 } \ $|$ \ 
+\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ manishabhayal320@gmail.com} \ $|$ \ 
+\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +91 7800884320} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%Interests/ Keywords/ Summary
+\section{Summary}
+ Curious and hardworking CSE student with skills in C, C++, Python, DSA, and web development. Strong
+ in problem-solving and teamwork, always eager to learn new things and grow at every stage. Looking for
+ opportunities to apply knowledge and improve through continuous learning. \href{https://github.com/jitinnair1/autoCV}
+
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+\textbf{Jawaharlal Institute of Technology, Borawan Dist. Khargone } & \hfill  \href{https://some-link.com}{2024 - 2028} \\[3.75pt]
+
+B.Tech CSE - CGPA - 7.60/10 & \textbf \hfill \\ 
+
+\textbf{Government H. Sec. School, Talwada Bujurg [M.P]}  & \hfill  \href{https://some-link.com}{2023 - 2024} \\[3.75pt]
+
+\textnormal{Intermediate -Percentage - 80.2} \hfill  \\
+\textbf{Government H. Sec. School, Talwada Bujurg [M.P]}  & \hfill  \href{https://some-link.com}{2021 - 2022} \\[3.75pt]
+
+\textnormal{Matriculation -Percentage - 83.6}\hfill  \\
+\noindent % Prevents indentation of the first line
+\end{tabularx}
+
+\vspace{-13pt}
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+%Projects
+\section{Projects}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{ 1. Online Movie Ticket Booking System } {(Oct, 2024)} & \hfill \href{https://https://github.com/Hanshika103/Online-Movie-Booking-System-using-C}{github link} \\[2pt]
+\multicolumn{2}{@{}X@{}}{ An online movie ticket booking system in C allows users to view movies, check seat availability, and book or
+ cancel tickets through a simple console-based program.}  \\
+\textbf{ 2. Online Voting System} {(Dec, 2024)} & \hfill \href{https://https://github.com/Hanshika103/Online-Voting-System-using-c-}{github link} \\[2pt]
+\multicolumn{2}{@{}X@{}}{An online voting system in C++ lets users register, log in, and securely cast their votes for candidates, with the
+ program counting and displaying results}  \\
+
+\textbf{ 3. All in One Mini Games}{(June, 2025)} & \hfill  \href{https://https://github.com/Hanshika103/my-python-project}{github link} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{ An all-in-one mini game project in Python that includes Snake and Ladder, Rock-Paper-Scissors, Tic-Tac-Toe,
+ and a Teaser/Hangman game, allowing users to select and enjoy multiple games in a single program using GUI applications.}  \\
+
+ \textbf{ 4. Girl's Salon Management System}{(Nov, 2025)}& \hfill  \href{https://https://github.com/Hanshika103/Girl-s-Salon-Management-System-using-DSA-concept}{github link} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Built a complete Girls Salon Management System with features like appointment booking, staff management, service catalog, billing, and file-based data storage using DSA concepts using C++ and OOPS.}  \\
+\end{tabularx}
+
+
+
+
+  
+
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Skill Set}
+\textbf{Languages:} C/C++,Python,Data Structures,HTML,CSS,JavaScript\\
+\textbf{Tools and Technologies:} VS Code,Turbo C, Replit , Multisim,IDLE Shell 13.0,Anaconda, Solid Works, Latex \\
+\textbf{Soft Skills:} Conflict Management, Problem Solving, Team Work, Leadership, Communication \\
+\textbf{Leadership Proficiencies:} English, Hindi \\[-1.5em]
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------------
+\section{Co-Curricular Activities}
+Participated in \textbf{" HACK-VINYAS Internal Hackathon "} in JIT Borawan \\
+Participated in \textbf{" CosmoComet Competitive Programming " }certificate program organised by Birla Institute of Technology, Mersa \\ 
+Participated in\textbf{ " Smart India Hackathon "} in JIT Borawan. \\ 
+Participated in \textbf{" Odoo Hackathon "} organised by IIT gandinagar. \\
+
+\vspace{-14pt}
+
+%----------------------------------------------------------------------------------------
+
+
+
+\section{Extra- Curricular Activities}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+ Trainee \textbf{“Code Nexus: Technical Club”} \\ 
+
+\end{tabularx}
+
+
+
+\end{document}

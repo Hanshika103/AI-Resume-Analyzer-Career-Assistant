@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+    <div class="glass-card">
+
+        <h1>AI Resume Analyzer</h1>
+        <p>Get instant ATS score & skill insights</p>
+
+        <!-- Drag & Drop Zone -->
+        <div class="drop-zone" id="dropZone">
+            <input type="file" id="resumeFile" accept=".pdf" hidden>
+
+            <div class="icon">📄</div>
+            <h3>Drag & Drop Resume</h3>
+            <p>or click to browse (PDF only)</p>
+
+            <span id="fileName">No file selected</span>
+        </div>
+
+        <button class="btn" onclick="uploadResume()">
+            Analyze Resume
+        </button>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            Analyzing your resume...
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/upload.js"></script>
+</body>
+</html>
