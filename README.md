@@ -139,42 +139,40 @@ Frontend displays results
 ```bash
 git clone https://github.com/your-username/ai-resume-analyzer.git
 cd ai-resume-analyzer
-2️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
 pip install flask
-3️⃣ Run Backend
+### 3️⃣ Run Backend
 python app.py
-4️⃣ Open Frontend
+### 4️⃣ Open Frontend
 Open index.html in browser
 OR
 Run using Live Server (VS Code)
-📸 Screenshots
-
-(Add your UI screenshots here)
-
+### 📸 Screenshots
 Landing Page
 Upload Page
 Dashboard Result Page
-🎯 Future Improvements
-🔥 AI-based LLM integration (OpenAI/HuggingFace)
-📊 Advanced ATS scoring model
-📄 PDF report download feature
-🌐 Deployment on cloud (Render / Vercel)
-📱 Mobile responsive optimization
-🧠 Learning Outcomes
 
-This project helped in understanding:
+## 🎯 Future Improvements
+### 🔥 AI-based LLM integration (OpenAI/HuggingFace)
+### 📊 Advanced ATS scoring model
+### 📄 PDF report download feature
+### 🌐 Deployment on cloud (Render / Vercel)
+### 📱 Mobile responsive optimization
+## 🧠 Learning Outcomes
 
-Flask backend development
-File upload handling
-Basic NLP concepts
-Full-stack integration
-Real-world AI workflow design
-👨‍💻 Author
+### This project helped in understanding:
 
-Mukati
+### Flask backend development
+### File upload handling
+### Basic NLP concepts
+### Full-stack integration
+### Real-world AI workflow design
+## 👨‍💻 Author
 
-Passionate about AI + Web Development
-Building real-world projects for learning & placements
-⭐ If you like this project
+### Hanshika Mukati
 
-Give it a ⭐ on GitHub and share it with others!
+### Passionate about AI + Web Development
+### Building real-world projects for learning & placements
+## ⭐ If you like this project
+
+## Give it a ⭐ on GitHub and share it with others!
