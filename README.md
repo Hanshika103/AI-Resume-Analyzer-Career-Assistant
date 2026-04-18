@@ -137,7 +137,7 @@ Frontend displays results
 
 ### 1️⃣ Clone Repository
 bash
-git clone https://github.com/your-username/ai-resume-analyzer.git
+git clone https://github.com/Hanshika103/AI-Resume-Analysis---Job-Creation.git
 cd ai-resume-analyzer
 ### 2️⃣ Install Dependencies
 pip install flask
