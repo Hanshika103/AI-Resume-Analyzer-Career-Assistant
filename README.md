@@ -82,29 +82,29 @@ Many candidates struggle with:
 ## 📁 Project Structure
 
 
-backend/
-│
-├── app.py
-├── routes/
-│ └── resume_routes.py
-│
-├── services/
-│ ├── resume_parser.py
-│ ├── skill_extractor.py
-│ ├── scoring_engine.py
-│ ├── feedback_engine.py
-│ ├── interview_engine.py
-│ └── job_recommender.py
-│
-└── uploads/
+#### backend/
+#### │
+#### ├── app.py
+#### ├── routes/
+#### │ └── resume_routes.py
+#### │
+#### ├── services/
+#### │ ├── resume_parser.py
+#### │ ├── skill_extractor.py
+#### │ ├── scoring_engine.py
+#### │ ├── feedback_engine.py
+#### │ ├── interview_engine.py
+#### │ └── job_recommender.py
+#### │
+#### └── uploads/
 
-frontend/
-│
-├── index.html
-├── upload.html
-├── dashboard.html
-├── css/
-└── js/
+#### frontend/
+#### │
+#### ├── index.html
+#### ├── upload.html
+#### ├── dashboard.html
+#### ├── css/
+#### └── js/
 
 
 ---
