@@ -150,24 +150,23 @@ Run using Live Server (VS Code)
 ### 📸 Screenshots
 
 #### Landing Page
-```
+
 <img width="1158" height="471" alt="loaded" src="https://github.com/user-attachments/assets/6273625a-a3f2-47e3-904c-6df0a8363104" />
 
-```
+
 ### Upload Page
-```
 <img width="959" height="513" alt="uploaded" src="https://github.com/user-attachments/assets/b9237cc8-81e2-449e-b6d6-ad8366893d41" />
 
-```
+
 
 ### Dashboard Result Page
-```
+
 <img width="681" height="621" alt="dashboard1" src="https://github.com/user-attachments/assets/6848ad45-78b8-49df-a1a5-5df3811b8adc" />
 
 <img width="457" height="611" alt="dashboard2" src="https://github.com/user-attachments/assets/bc727e8e-46ea-4879-b80f-fcbc668e0c0c" />
 
 
-```
+
 
 ## 🎯 Future Improvements
 ### 🔥 AI-based LLM integration (OpenAI/HuggingFace)
