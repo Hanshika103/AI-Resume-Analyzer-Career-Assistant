@@ -1,5 +1,8 @@
 from flask import Blueprint, request, jsonify
 import os
+import tempfile
+
+UPLOAD_FOLDER = os.path.join(tempfile.gettempdir(), "resume_uploads")
 
 from services.resume_parser import extract_text
 from services.skill_extractor import extract_skills
