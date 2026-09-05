@@ -13,7 +13,7 @@ from services.job_recommender import recommend_job
 
 resume_bp = Blueprint("resume_bp", __name__)
 
-UPLOAD_FOLDER = "backend/uploads"
+
 
 
 @resume_bp.route("/upload", methods=["POST"])
