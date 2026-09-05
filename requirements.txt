@@ -4,3 +4,6 @@ numpy
 scikit-learn
 python-docx
 PyPDF2
+Flask
+flask-cors
+PyPDF2
